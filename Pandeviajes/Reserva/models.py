@@ -1,6 +1,6 @@
 from django.db import models
 from django.urls import reverse
-import uuid
+import uuid 
 
 # Create your models here.
 
@@ -12,8 +12,7 @@ class Reserva(models.Model):
 	edad=models.IntegerField(max_length=9)
 	cantP=models.IntegerField(max_length=3)
 	telef=models.IntegerField(max_length=9)
-
- 	SEL_DEST = (
+	SEL_DEST = (
 		('NA', 'Selecciona un destino'),
 		('HAWAI', 'Hawai'),
 		('PARIS', 'Paris'),
